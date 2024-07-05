@@ -1,0 +1,32 @@
+#course-content 
+{
+    max-width: 800px;
+    margin: 0 auto; 
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: pre-line;
+    padding: 0 ; 
+}
+
+#course-content h2 
+{
+    letter-spacing: 5px;
+}
+
+#course-content p 
+{
+    text-align: center;
+    white-space: normal;
+}
+
+
+
+@media (max-width: 768px) 
+{
+    #course-content 
+    {
+        padding: 40px 20px;
+    }
+}

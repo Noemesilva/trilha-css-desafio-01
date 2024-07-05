@@ -1,0 +1,162 @@
+#transform-world 
+{
+    background: url('../images/woman-code.png') center/cover fixed;
+    height: 343px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 198px;
+    border: 1px solid #31a8dd;
+}
+
+.transform-content
+{
+  width: 800px;
+  word-break: break-all;
+} 
+
+.transform-content img 
+{
+  display: inline-block;
+  transition: transform 0.3s linear; 
+}
+
+.transform-content img:hover 
+{
+  transform: scale(1.1); 
+}
+
+#transform-world p 
+{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 3px 0 2px rgba(51, 168, 219, 1);
+    text-transform: lowercase;
+    width: 244px;
+    opacity: 1;  
+    transition: text-shadow 0.3s ease;
+}
+
+.title-part,
+.subtitle-part 
+{
+    display: block;
+    word-break: break-word;
+}
+
+span .subtitle-part 
+{
+    margin-top: 0.5rem;
+    font-family: Raleway,Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+}
+
+@keyframes pulse 
+{
+  20% {
+      text-shadow: 0 0  5px rgba(51, 168, 219, 1);
+  }
+  60% {
+      text-shadow: 0 0 10px rgba(255, 0, 43, 1);
+  }
+  100% {
+      text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+}
+
+#transform-world p 
+{
+    animation: pulse 3s infinite;  
+}
+
+#transform-world p:hover
+{
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#professional-challenges {
+    text-align: center;
+    border-bottom: 1px solid #31a8dd;
+}
+
+#professional-challenges img 
+{
+    max-width: 100%;
+    margin: 30px 0;
+}
+
+.dio-logo
+{
+    max-width: 250px;
+    margin-bottom: 20px;
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+}
+
+  .dio-logo:hover 
+{
+      transform: scale(1.1); 
+      
+}
+
+@media (max-width: 768px) 
+{
+  
+  #transform-world 
+  {
+      height: 200px;
+      padding-left: 20px;
+      background-attachment: scroll;
+  }
+
+  #transform-world p 
+  {
+      font-size: 24px;
+      width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) 
+{
+
+  #transform-world 
+  {
+    height: auto;
+    min-height: 200px;
+    padding: 40px 20px;
+    justify-content: center;
+    text-align: center;
+    background-attachment: scroll;
+}
+
+#transform-world p 
+{
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-part, .subtitle-part 
+{
+    display: block;
+    width: 100%;
+    word-break: break-word;
+}
+
+.subtitle-part 
+{
+    margin-top: 10px;
+}
+}

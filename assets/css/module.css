@@ -1,0 +1,48 @@
+.module 
+{
+    margin-bottom: 12px;
+    padding: 15px; 
+    border-radius: 57px;
+    line-height: 18.78px;
+    display: flex;
+    justify-content: center; 
+    box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.4) inset;
+    border-width: 3px;
+    border-style: groove;
+    border-color:rgba(51, 168, 219, 1);
+    background-color: rgba(37, 37, 37, 1);
+    transition: transform 0.3s linear; 
+}
+
+.module:hover 
+{
+    transform: scale(1.1); 
+}
+
+.module:last-child 
+{
+    margin-bottom: 0;
+}
+
+.module:hover 
+{
+    transform: scale(1.1); 
+}
+
+.module span 
+{
+    color: rgb(49, 168, 221);
+    font-weight: bold;
+    margin-right: 4px;
+}
+@media (max-width: 768px) 
+{
+    .module 
+    {
+        border-radius: 30px;
+        font-size: 14px;
+    }
+}
+
+
+
